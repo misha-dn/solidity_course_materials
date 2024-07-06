@@ -1,0 +1,38 @@
+Date : 2024-07-02 22:35:02
+Directory : c:\REMIX\course_assignments\buggy-nft-factory-master
+Total : 9 files,  716 codes, 93 comments, 144 blanks, all 953 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Solidity |          9 |        716 |         93 |        144 |        953 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |          9 |        716 |         93 |        144 |        953 |
+| script                                                                                     |          1 |          8 |          1 |          4 |         13 |
+| src                                                                                        |          7 |        692 |         91 |        131 |        914 |
+| src (Files)                                                                                |          2 |        394 |         86 |         58 |        538 |
+| src\interfaces                                                                             |          5 |        298 |          5 |         73 |        376 |
+| test                                                                                       |          1 |         16 |          1 |          9 |         26 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                   | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\REMIX\course_assignments\buggy-nft-factory-master\script\Counter.s.sol                  | Solidity |          8 |          1 |          4 |         13 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\BuggyNFT.sol                      | Solidity |        369 |         79 |         47 |        495 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\NFTFactory.sol                    | Solidity |         25 |          7 |         11 |         43 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\interfaces\IUniswapV2Factory.sol  | Solidity |         22 |          1 |         10 |         33 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\interfaces\IUniswapV2Pair.sol     | Solidity |         81 |          1 |         30 |        112 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\interfaces\IUniswapV2Router01.sol | Solidity |        141 |          1 |         20 |        162 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\interfaces\IUniswapV2Router02.sol | Solidity |         47 |          1 |          8 |         56 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\src\interfaces\IWETH.sol              | Solidity |          7 |          1 |          5 |         13 |
+| c:\REMIX\course_assignments\buggy-nft-factory-master\test\FactoryTests.sol                 | Solidity |         16 |          1 |          9 |         26 |
+| Total                                                                                      |          |        716 |         93 |        144 |        953 |
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
