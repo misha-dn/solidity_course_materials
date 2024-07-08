@@ -23,15 +23,22 @@ contract lesson_3 {
         owner = msg.sender;
     }
 
+    //использовнаие модификаторов
+    //проверка владельца контракта
+
     modifier chkOwner() {
         require(msg.sender == owner, "false owner");
         _;
     }
 
+    //проверка 0 адреса
+
     modifier chkZeroAddr(address _newaddr) {
         require(_newaddr != address(0x0), "new owner is zero ");
         _;
     }
+
+    //изменение владельца к-та
 
     function newOwner(address _newaddr) public chkOwner chkZeroAddr(_newaddr) {
         owner = _newaddr;

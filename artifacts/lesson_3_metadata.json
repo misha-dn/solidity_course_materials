@@ -85,11 +85,11 @@
 	},
 	"sources": {
 		"course_assignments/lesson_3.sol": {
-			"keccak256": "0x8c87f8082d71fcae8c52b160179eb675a0a66946a6c22fa4d5a5d88581cdfa74",
+			"keccak256": "0x715e31ed9a4618dae596162af1d0b88ffa676cd51109e8f7daa85dc4e9b3dd79",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c3d34e23ff7e5ebf568a32c836d03aecc162b82f18dc4172e5f229a516966f95",
-				"dweb:/ipfs/QmWtQ2aJ6tbmPW2wTwS7rBGWK1TRehhdzPhB2QSHWBrsER"
+				"bzz-raw://5370e8db18426cdca501f5413d0d714debe65ec601c18510e39a1e03eaf8d3ea",
+				"dweb:/ipfs/QmPBuit3BKqG7sNUg4ZQ2kuERUCq37QjXUkR6UShr6En86"
 			]
 		}
 	},
