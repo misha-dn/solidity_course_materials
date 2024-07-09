@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "showBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"course_assignments/test_receive.sol": "Called"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"course_assignments/test_receive.sol": {
+			"keccak256": "0x1e9709433bfaad3d7c21f18999273716a783a076bc84e513b316188228fc1445",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3219dc5db8880fc925685348688098320fdd403d4627e994126a4b6cf24a10b2",
+				"dweb:/ipfs/QmSMYLdUmisYX5Mbt8W2GecAbWxV3guWYWd4pi9u2GSqUW"
+			]
+		}
+	},
+	"version": 1
+}

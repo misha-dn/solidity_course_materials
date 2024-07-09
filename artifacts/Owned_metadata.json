@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"course_assignments/test_receive.sol": "Owned"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"course_assignments/test_receive.sol": {
+			"keccak256": "0x02d582084fe876718cb9c63424d60bb694d2ef752022f2ac5a97fdfa3a0e49fe",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d4a1b8fa58dad89e072bdc2273f748586fe29ef25b8b032a62f78104404c3b3d",
+				"dweb:/ipfs/QmZAXo5n8GNcUHsdHRWUuSxXCc35Qb364DgLX1WbAwuB5R"
+			]
+		}
+	},
+	"version": 1
+}
