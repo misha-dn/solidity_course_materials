@@ -3,12 +3,15 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 contract data {
+
+    address public owner;
+
     //uint address bool
     uint public val;
     address public my_contract_addr;
     bool public flag;
     //immutable address
-    address public immutable owner;
+    address public immutable some_address;
     //const
     uint public constant const_val = 123;
     //mapping
@@ -35,6 +38,27 @@ contract data {
     }
 
     
+    //структура
+    struct Balance {
+        uint timestamp; //num of pmts by client
+        uint amount; //paymnet value
+        string client; //client name
+    }
+    //словарь структур
+    mapping(address => Balance) public balances_dict;
+
+    //массив структур
+    Balance[] public balances_array;
+
+    //вложенный маппинг
+    mapping(address => mapping(uint => uint)) public ledger;
+
+    //FUCTIONS
+    //alter contract owner
+    function newOwner(address _newaddr) public chkZeroAddr(_newaddr) {
+        owner = _newaddr;
+    }
+
     
     
 

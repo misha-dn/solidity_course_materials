@@ -30,6 +30,64 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "balances_array",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "client",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances_dict",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "client",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "const_val",
 				"outputs": [
@@ -75,6 +133,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ledger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "my_contract_addr",
 				"outputs": [
@@ -88,8 +170,34 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newaddr",
+						"type": "address"
+					}
+				],
+				"name": "newOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "some_address",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -142,11 +250,11 @@
 	},
 	"sources": {
 		"course_assignments/test1.sol": {
-			"keccak256": "0x8ee2ad9cee438f935069de5970f3ff22ec484155344b7da9e73939df17ed711f",
+			"keccak256": "0x5f7fc9f47af584304bcef7914e71016a0d290c29b9f0e3bd2309d0d0f6493d49",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://684a6d19c6b4400292f5338a2a4ece9124328eac14b6119504c629c1ad2599c4",
-				"dweb:/ipfs/QmTn2LQSJrkYr2ZvsWsg7MZhwPJA2yTpbqvMgHdu3yWgZr"
+				"bzz-raw://334901bacf16f33027daba9f62aa78e3db98d61fcb8baec50f8dfea3c0d43f8f",
+				"dweb:/ipfs/QmdsEzDYNZ3jsJv1KEtYYY6CGtydPBGWgHX9CVC7oWBvEq"
 			]
 		}
 	},
