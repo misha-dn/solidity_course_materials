@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "TokenCode",
+						"type": "string"
+					}
+				],
+				"name": "buyTokenForEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TokenExchange/TokenExchng.sol": "TokenExchange"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TokenExchange/ERC20.sol": {
+			"keccak256": "0xf8068a4092e9c24266761918824001331054607a48b36f344f24806bcdd1e8cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://64a18434bf5acac26cf137e4fd8099c86a9ed2b696fa1bdfcabef78b363cf720",
+				"dweb:/ipfs/QmdZr9zy5dGvjffAXRbH3jPRiCUw7jt3GJNSDy9EPpFMY5"
+			]
+		},
+		"TokenExchange/IERC20.sol": {
+			"keccak256": "0x1c15854d415493331ff06ef9b0899f81dc6960189fa86cfd1b29c4374cc336a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5cb41bc9b9e1f5617d8e826c07fb21ecf986f70b4b5b395d6ecf9c5eb9f1a204",
+				"dweb:/ipfs/QmNvJhvpJE8b3nyz7RaMCSPhfbmzj1TLuL3a7NkS9AHkGJ"
+			]
+		},
+		"TokenExchange/TokenA.sol": {
+			"keccak256": "0xd2ce89d5fb2c50fec8658d912a62927ac402a1576b5f198f462734dc89aa7c25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://02918ae350a91dd6071c9864f0f673b05dd8091b7b57425b66b7f209089187ab",
+				"dweb:/ipfs/QmYcxmAn9cjYuDuMQpdxNCtD2C1vLJEcteY9HPnaJDVg38"
+			]
+		},
+		"TokenExchange/TokenB.sol": {
+			"keccak256": "0x1022e1bdc83cf550023c31fc92dcc8cd88c33bba0d428ee9a9bff0ca773890ce",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a4b0ec724aa59ec2315233b30a64bad548a2bfd5ccbeb267caafd8675e9d616",
+				"dweb:/ipfs/QmNvnYHxuXQ3MBw8c7aWTDDkoHg7YhAvn2erJfN63dtUnp"
+			]
+		},
+		"TokenExchange/TokenExchng.sol": {
+			"keccak256": "0x0dbc43de33049960f9b7fc4911d56ec5a7560291cdbbbffead3f28da83cf1eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c54af32748c17a1f0d9f98bc2c7b2ce4e7c55bf30a485f39bea82767b299deb0",
+				"dweb:/ipfs/QmeVcj6M9Sdk5pkiUSDtbBBjSEvX7jPgG5nmCGmxtxtxM5"
+			]
+		}
+	},
+	"version": 1
+}
