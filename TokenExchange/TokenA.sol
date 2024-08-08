@@ -15,9 +15,9 @@ contract TokenA is ERC20 {
     {
         _owner = msg.sender;
         //mint initial volume of tokens TA
-        mint(100 * 10 ** decimals());
+        mint(100);
         //send initial amount of TA for the tokenExchange
-        initExchange(tokenEx, 10 * 10 ** decimals());
+        initExchange(tokenEx, 10);
 
     }
 

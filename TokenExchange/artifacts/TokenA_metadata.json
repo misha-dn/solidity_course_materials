@@ -314,7 +314,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TokenExchange/TokenA.sol": "TokenA"
+			"solidity_course_materials/TokenExchange/TokenA.sol": "TokenA"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -328,7 +328,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"TokenExchange/ERC20.sol": {
+		"solidity_course_materials/TokenExchange/ERC20.sol": {
 			"keccak256": "0xf8068a4092e9c24266761918824001331054607a48b36f344f24806bcdd1e8cb",
 			"license": "MIT",
 			"urls": [
@@ -336,7 +336,7 @@
 				"dweb:/ipfs/QmdZr9zy5dGvjffAXRbH3jPRiCUw7jt3GJNSDy9EPpFMY5"
 			]
 		},
-		"TokenExchange/IERC20.sol": {
+		"solidity_course_materials/TokenExchange/IERC20.sol": {
 			"keccak256": "0x1c15854d415493331ff06ef9b0899f81dc6960189fa86cfd1b29c4374cc336a3",
 			"license": "MIT",
 			"urls": [
@@ -344,12 +344,12 @@
 				"dweb:/ipfs/QmNvJhvpJE8b3nyz7RaMCSPhfbmzj1TLuL3a7NkS9AHkGJ"
 			]
 		},
-		"TokenExchange/TokenA.sol": {
-			"keccak256": "0xd2ce89d5fb2c50fec8658d912a62927ac402a1576b5f198f462734dc89aa7c25",
+		"solidity_course_materials/TokenExchange/TokenA.sol": {
+			"keccak256": "0x0604bc20a88bf4c82fbfa9541a8915fa9e9a757ff0d97a6ac7867c54b86d8b16",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02918ae350a91dd6071c9864f0f673b05dd8091b7b57425b66b7f209089187ab",
-				"dweb:/ipfs/QmYcxmAn9cjYuDuMQpdxNCtD2C1vLJEcteY9HPnaJDVg38"
+				"bzz-raw://68cf5e3b2cc5657b2bdf7575bd694ce16d43d9070c479bf777d11452d6c1bfb8",
+				"dweb:/ipfs/QmUHTDWMvahzsrckQXc7xze8wA3Caj7qoNgzcyRjuG4efp"
 			]
 		}
 	},

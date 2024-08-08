@@ -15,9 +15,9 @@ contract TokenB is ERC20 {
     {
         _owner = msg.sender;
         //mint initial volume of tokens TB
-        mint(100 * 10 ** decimals());
+        mint(100);
         //send initial amount of TB for the tokenExchange
-        initExchange(tokenEx, 10 * 10 ** decimals());
+        initExchange(tokenEx, 10);
 
     }
 
@@ -41,16 +41,16 @@ contract TokenB is ERC20 {
 
 }
 
-contract TokEx{
-    TokenB public _token;
+// contract TokEx{
+//     TokenB public _token;
 
-    constructor(TokenB token){
-        _token = TokenB(token);
-    }
+//     constructor(TokenB token){
+//         _token = TokenB(token);
+//     }
 
-    function approve_other() public {
-        /*IERC20 ex_contract = IERC20(address(this));*/
-        _token.approve(address(this), 10);
+//     function approve_other() public {
+//         /*IERC20 ex_contract = IERC20(address(this));*/
+//         _token.approve(address(this), 10);
 
-    }
-}
+//     }
+// }

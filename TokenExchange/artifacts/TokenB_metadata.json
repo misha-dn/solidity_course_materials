@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenEx",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -143,13 +149,8 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
@@ -313,7 +314,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TokenExchange/TokenB.sol": "TokenB"
+			"solidity_course_materials/TokenExchange/TokenB.sol": "TokenB"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -327,7 +328,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"TokenExchange/ERC20.sol": {
+		"solidity_course_materials/TokenExchange/ERC20.sol": {
 			"keccak256": "0xf8068a4092e9c24266761918824001331054607a48b36f344f24806bcdd1e8cb",
 			"license": "MIT",
 			"urls": [
@@ -335,7 +336,7 @@
 				"dweb:/ipfs/QmdZr9zy5dGvjffAXRbH3jPRiCUw7jt3GJNSDy9EPpFMY5"
 			]
 		},
-		"TokenExchange/IERC20.sol": {
+		"solidity_course_materials/TokenExchange/IERC20.sol": {
 			"keccak256": "0x1c15854d415493331ff06ef9b0899f81dc6960189fa86cfd1b29c4374cc336a3",
 			"license": "MIT",
 			"urls": [
@@ -343,12 +344,12 @@
 				"dweb:/ipfs/QmNvJhvpJE8b3nyz7RaMCSPhfbmzj1TLuL3a7NkS9AHkGJ"
 			]
 		},
-		"TokenExchange/TokenB.sol": {
-			"keccak256": "0x0a57d6555df8181bb8d005c22b435c30ba58db8f935e50254b4534a4fc86b05f",
+		"solidity_course_materials/TokenExchange/TokenB.sol": {
+			"keccak256": "0x01fc92f4ec479f75e8df11a8b69e25e22532f7bc5bfce46c89b319a998dbeb60",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5d834d0a6db25772c44a0b65fcf2ff5bd7a6caa3ad1165d9b229c2e8fee1aaa6",
-				"dweb:/ipfs/QmeCH3iy2zHpLEs46r7yMEo1KSMoizCGns7wjiGEi7WxBW"
+				"bzz-raw://574a2b9e98b4f6632444e3ed30186cde52c551e6e68a584b0eb7c54a072d7c92",
+				"dweb:/ipfs/QmQ8un22FqKUGAMPRV85yEHtSGnw6eXBoHvEK4Q7xDq15X"
 			]
 		}
 	},
