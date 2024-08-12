@@ -9,15 +9,14 @@ contract TokenA is ERC20 {
     address private _owner;
 
     //constructot takes the address of the token exchange contract
-    constructor(address tokenEx)
+    constructor()
         ERC20("TokenA", "TA")
 
     {
+        //TokenExchange contract is the owner of this contract
         _owner = msg.sender;
-        //mint initial volume of tokens TA
+        //mint initial volume of tokens TA to the TokenExchange
         mint(100);
-        //send initial amount of TA for the tokenExchange
-        initExchange(tokenEx, 10);
 
     }
 
@@ -32,11 +31,6 @@ contract TokenA is ERC20 {
 
     function mint(uint256 value) public onlyOwner{
         _mint(msg.sender, value * 10 ** decimals());
-    }
-
-    function initExchange(address tokenEx, uint256 initvol) internal onlyOwner{
-        require(tokenEx != address(0), "InvalidExchangeAddress");
-        transfer(tokenEx, initvol);
     }
 
 }

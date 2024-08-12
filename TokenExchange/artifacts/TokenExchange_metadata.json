@@ -6,6 +6,30 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "TokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -14,8 +38,33 @@
 					}
 				],
 				"name": "buyTokenForEther",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "TokenCode",
+						"type": "string"
+					}
+				],
+				"name": "showBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -32,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity_course_materials/TokenExchange/TokenExchng.sol": "TokenExchange"
+			"TokenExchange/TokenExchng.sol": "TokenExchange"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,7 +95,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity_course_materials/TokenExchange/ERC20.sol": {
+		"TokenExchange/ERC20.sol": {
 			"keccak256": "0xf8068a4092e9c24266761918824001331054607a48b36f344f24806bcdd1e8cb",
 			"license": "MIT",
 			"urls": [
@@ -54,7 +103,7 @@
 				"dweb:/ipfs/QmdZr9zy5dGvjffAXRbH3jPRiCUw7jt3GJNSDy9EPpFMY5"
 			]
 		},
-		"solidity_course_materials/TokenExchange/IERC20.sol": {
+		"TokenExchange/IERC20.sol": {
 			"keccak256": "0x1c15854d415493331ff06ef9b0899f81dc6960189fa86cfd1b29c4374cc336a3",
 			"license": "MIT",
 			"urls": [
@@ -62,28 +111,28 @@
 				"dweb:/ipfs/QmNvJhvpJE8b3nyz7RaMCSPhfbmzj1TLuL3a7NkS9AHkGJ"
 			]
 		},
-		"solidity_course_materials/TokenExchange/TokenA.sol": {
-			"keccak256": "0xd2ce89d5fb2c50fec8658d912a62927ac402a1576b5f198f462734dc89aa7c25",
+		"TokenExchange/TokenA.sol": {
+			"keccak256": "0x93cbbf5c295536680110fe509af3152a8af40413999488d4f4282dcab09fb389",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02918ae350a91dd6071c9864f0f673b05dd8091b7b57425b66b7f209089187ab",
-				"dweb:/ipfs/QmYcxmAn9cjYuDuMQpdxNCtD2C1vLJEcteY9HPnaJDVg38"
+				"bzz-raw://4aabe6bc4b5de1e26616e4a1a8bf7acadde9929604bd83d7c0e970f6d4c27544",
+				"dweb:/ipfs/QmeRKECAP7er6YRFBRtjRGB97rE7BUcz9VKyGLf638hCFY"
 			]
 		},
-		"solidity_course_materials/TokenExchange/TokenB.sol": {
-			"keccak256": "0x1022e1bdc83cf550023c31fc92dcc8cd88c33bba0d428ee9a9bff0ca773890ce",
+		"TokenExchange/TokenB.sol": {
+			"keccak256": "0xa22729e099f2fe37752671750b37a7d9b97c516790aa7bb36ce2a08772b29bf1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2a4b0ec724aa59ec2315233b30a64bad548a2bfd5ccbeb267caafd8675e9d616",
-				"dweb:/ipfs/QmNvnYHxuXQ3MBw8c7aWTDDkoHg7YhAvn2erJfN63dtUnp"
+				"bzz-raw://bf6bf92f3ffd89f632eca6cddd0714a05d5693ceb4c306343e9dc7bcfa7ec071",
+				"dweb:/ipfs/QmcNWoc6Co65f7XkcuXKvrX3BepjwKZzMwqjhi16qE9n62"
 			]
 		},
-		"solidity_course_materials/TokenExchange/TokenExchng.sol": {
-			"keccak256": "0x25b422a9cc9ebdb2a4715c1a694f63c127ac7b3fd76c11f0a52a5c00cdb7e8e8",
+		"TokenExchange/TokenExchng.sol": {
+			"keccak256": "0x621df5a77ad14765e6a54520d3e09b070991bc749c73ea28fc092d3333c10b9a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://878368193e9b2c6bd1fb66ba57b3182af8cf7c3ed2b19aae89792a134ec4b090",
-				"dweb:/ipfs/QmRXpd5rKquSyPArijQxqPEAVFH6duinCPGYHs8JHGeQvq"
+				"bzz-raw://cc994e38852257cda2216d1ac657fcfe1841b73c861199740aaaac0056cf62d4",
+				"dweb:/ipfs/QmfJGT2aiaTkTkgBsBHucjMs2xqFpkkHwqhDmNkKDPQwta"
 			]
 		}
 	},

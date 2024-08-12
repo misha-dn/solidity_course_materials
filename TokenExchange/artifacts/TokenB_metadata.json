@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "tokenEx",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -314,7 +308,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity_course_materials/TokenExchange/TokenB.sol": "TokenB"
+			"TokenExchange/TokenB.sol": "TokenB"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -328,7 +322,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity_course_materials/TokenExchange/ERC20.sol": {
+		"TokenExchange/ERC20.sol": {
 			"keccak256": "0xf8068a4092e9c24266761918824001331054607a48b36f344f24806bcdd1e8cb",
 			"license": "MIT",
 			"urls": [
@@ -336,7 +330,7 @@
 				"dweb:/ipfs/QmdZr9zy5dGvjffAXRbH3jPRiCUw7jt3GJNSDy9EPpFMY5"
 			]
 		},
-		"solidity_course_materials/TokenExchange/IERC20.sol": {
+		"TokenExchange/IERC20.sol": {
 			"keccak256": "0x1c15854d415493331ff06ef9b0899f81dc6960189fa86cfd1b29c4374cc336a3",
 			"license": "MIT",
 			"urls": [
@@ -344,12 +338,12 @@
 				"dweb:/ipfs/QmNvJhvpJE8b3nyz7RaMCSPhfbmzj1TLuL3a7NkS9AHkGJ"
 			]
 		},
-		"solidity_course_materials/TokenExchange/TokenB.sol": {
-			"keccak256": "0x01fc92f4ec479f75e8df11a8b69e25e22532f7bc5bfce46c89b319a998dbeb60",
+		"TokenExchange/TokenB.sol": {
+			"keccak256": "0xa22729e099f2fe37752671750b37a7d9b97c516790aa7bb36ce2a08772b29bf1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://574a2b9e98b4f6632444e3ed30186cde52c551e6e68a584b0eb7c54a072d7c92",
-				"dweb:/ipfs/QmQ8un22FqKUGAMPRV85yEHtSGnw6eXBoHvEK4Q7xDq15X"
+				"bzz-raw://bf6bf92f3ffd89f632eca6cddd0714a05d5693ceb4c306343e9dc7bcfa7ec071",
+				"dweb:/ipfs/QmcNWoc6Co65f7XkcuXKvrX3BepjwKZzMwqjhi16qE9n62"
 			]
 		}
 	},

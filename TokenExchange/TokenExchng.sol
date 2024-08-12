@@ -7,15 +7,15 @@ import "./TokenB.sol";
 
 contract TokenExchange{
     //for simplicity deploy TokenA and TokenB from TokenExchange contract
-    //pass them TokenExchange address for transferring initial token balance to the exchange
-    TokenA internal proxyTA = new TokenA(address(this));
-    TokenB internal proxyTB = new TokenB(address(this));
+    //initially all tokens minted by TokenA() and TokenB() belong to TokenExchange
+    TokenA internal proxyTA = new TokenA();
+    TokenB internal proxyTB = new TokenB();
     mapping(string => uint) public TokenBalance;
 
-    constructor(){
+    constructor (){
         //record starting balance of tokens
         TokenBalance["TA"] = proxyTA.balanceOf(address(this));
-        TokenBalance["TB"] = proxyTB.balanceOf(address(this));
+        TokenBalance["TB"] = proxyTB.balanceOf(address(this));        
     }
 
     //sells tokenA or tokenB for ethers 1:1
@@ -29,44 +29,32 @@ contract TokenExchange{
             //check if the TokenExchange has enough tokens TA
             require(proxyTA.balanceOf(address(this)) >= msg.value, "Not enough TAs to sell for ethers, reverting");
             //send msg.value of TAs to the buyer
-            require(proxyTA.transfer(msg.sender, msg.value)==true, "Transfer of TAs failed, reverting");
+            require(proxyTA.transfer(msg.sender, msg.value)==true, "Transfer of TAs failed, reverting");            
             //reflect the change in token balance of the TokenExchange
             TokenBalance["TA"] -= msg.value;
             //check that tokens reached the buyer
-            tokens_transfered = proxyTA.balanceOf(msg.sender);
+            tokens_transfered = proxyTA.balanceOf(msg.sender);            
         }
         if( _tokenB){
             //check if the TokenExchange has enough tokens TA
             require(proxyTB.balanceOf(address(this)) >= msg.value, "Not enough TBs to sell for ethers, reverting");
             //send msg.value of TAs to the buyer
-            require(proxyTB.transfer(msg.sender, msg.value)==true, "Transfer of TBs failed, reverting");
+            require(proxyTB.transfer(msg.sender, msg.value)==true, "Transfer of TBs failed, reverting"); 
             //reflect the change in token balance of the TokenExchange
-            TokenBalance["TA"] -= msg.value;            
-            tokens_transfered = proxyTB.balanceOf(msg.sender);                        
+            TokenBalance["TB"] -= msg.value;
+            //check that tokens reached the buyer
+            tokens_transfered = proxyTB.balanceOf(msg.sender);                                     
         }
-        if(_tokenA == false  && _tokenB == false){
+        if(_tokenA == false && _tokenB == false){
             revert("wrong token code, reverting");
         }
+
         return tokens_transfered;
     }
 
-    // function showBalance(string memory TokenCode) public view returns(int) {
-    //     bool _tokenA = keccak256(abi.encodePacked(TokenCode))==keccak256(abi.encodePacked("TA"));
-    //     bool _tokenB = keccak256(abi.encodePacked(TokenCode))==keccak256(abi.encodePacked("TB"));
-    //     int r = -1;        
-    //     if(_tokenA){
-    //         r = int(proxyTA.balanceOf(address(this)));
-    //     }
-    //     if(_tokenB){
-    //         r = int(proxyTA.balanceOf(address(this)));
-    //     }     
-    //     return r;   
-    // }
+    function showBalance(string memory TokenCode) public view returns(uint){
 
-    // function showCode(string memory code) public pure returns(bytes32, bytes32){
-    //     bytes memory r0 = abi.encodePacked("TA");
-    //     bytes memory r1 = abi.encodePacked(code);
-    //     return (keccak256(r0), keccak256(r1));
-    // }
+    }
+
     
 }
