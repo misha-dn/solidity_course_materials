@@ -2,6 +2,8 @@
 // Compatible with OpenZeppelin Contracts ^5.0.0
 pragma solidity ^0.8.20;
 
+// test who is msg.sender if running a contract A function from contract B
+
 contract A{
     address public owner;
 

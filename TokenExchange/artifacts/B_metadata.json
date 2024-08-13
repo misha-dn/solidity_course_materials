@@ -25,7 +25,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "showOwner",
+				"name": "showOwnerB",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -38,7 +38,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "showSender",
+				"name": "showSenderB",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -91,11 +91,11 @@
 	},
 	"sources": {
 		"solidity_course_materials/TokenExchange/show_sender.sol": {
-			"keccak256": "0x5624d7100be9e8d489cf80d2b6ddec622dbd1a91666dfd9725099f80cb854ffa",
+			"keccak256": "0xc3460c2d60a3107be670727be56a8b694a97059003dfcae0ed402771d3003e45",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40c5469bdd967183bf844ce81f0211957fb8736a0f9e713e0092c99c138d584b",
-				"dweb:/ipfs/QmYcetwvaVzTj1SFYtNb9mrqJqcybcc9cYYaQNZzEHuzTB"
+				"bzz-raw://ebe26635aec95aed6a19a76b50087f79c515b16822e7573b03b72866c514f2d4",
+				"dweb:/ipfs/QmfFUghsYHRwfyAjrP9YSTMpA48zsYTgP5MEp1wyHmupWK"
 			]
 		}
 	},

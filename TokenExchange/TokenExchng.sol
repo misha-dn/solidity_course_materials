@@ -52,6 +52,32 @@ contract TokenExchange{
         return tokens_transfered;
     }
 
+    //swaps B tokens for A 1:1
+    function buyA(uint _amount) public returns(bool){
+        //transfer _amount of TBs from msg.sender to TokenExchange
+        //allowance is checked inside transferFrom
+        require(proxyTB.transferFrom(msg.sender, address(this), _amount)==true, "cannot transfer TBs to the exchange");
+        TokenBalance["TB"] += _amount;
+        //tranfer _amount of TAs to msg.sender (the buyer)
+        require(proxyTA.transfer(msg.sender, _amount)==true, "cannot transfer TAs to the buyer");
+        TokenBalance["TA"] -= _amount;
+        
+        return true;
+    }
+
+    //swaps B tokens for A 1:1
+    function buyB(uint _amount) public returns(bool){
+        //transfer _amount of TAs from msg.sender to TokenExchange
+        //allowance is checked inside transferFrom
+        require(proxyTA.transferFrom(msg.sender, address(this), _amount)==true, "cannot transfer TAs to the exchange");
+        TokenBalance["TA"] += _amount;
+        //tranfer _amount of TBs to msg.sender (the buyer)
+        require(proxyTB.transfer(msg.sender, _amount)==true, "cannot transfer TBs to the buyer");
+        TokenBalance["TB"] -= _amount;
+        
+        return true;
+    }    
+
     function showBalance(string memory TokenCode) public view returns(uint){
 
     }
