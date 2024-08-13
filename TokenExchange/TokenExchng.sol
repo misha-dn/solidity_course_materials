@@ -19,7 +19,7 @@ contract TokenExchange{
     }
 
     //sells tokenA or tokenB for ethers 1:1
-    function buyTokenForEther(string memory TokenCode) public payable returns(uint){
+    function buyTokenForEther(string memory TokenCode) external payable returns(uint){
         //msg.value = amount of ethers sent by a buyer
         //check which token is wanted  
         bool _tokenA = keccak256(abi.encodePacked(TokenCode))==keccak256(abi.encodePacked("TA"));
@@ -78,9 +78,26 @@ contract TokenExchange{
         return true;
     }    
 
-    function showBalance(string memory TokenCode) public view returns(uint){
+    // function showBalance(string memory TokenCode) public view returns(uint){
+
+    // }
+    
+}
+
+contract testTokenBuyer{
+
+    TokenExchange  _exchange;
+
+    //give  TokenExchange  address as a parameter to the consructor
+    constructor(address _adr){
+         _exchange = TokenExchange(_adr);
+    }
+
+    //buy token A for ethers from the exchange
+    function buyForEthers(uint _vol) public returns(bool) {
+        address payable _to = payable(address(_exchange));
+        _to.buyTokenForEther(_vol);
 
     }
 
-    
 }
