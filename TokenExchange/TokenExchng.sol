@@ -87,16 +87,34 @@ contract TokenExchange{
 contract testTokenBuyer{
 
     TokenExchange  _exchange;
+    TokenA _proxyTA;
 
-    //give  TokenExchange  address as a parameter to the consructor
-    constructor(address _adr){
-         _exchange = TokenExchange(_adr);
+    receive() external payable { }
+
+    //give  TokenExchange  address and TokenA address as parameters to the consructor
+    constructor(address _adr0, address _adr1){
+         _exchange = TokenExchange(_adr0);
+         _proxyTA = TokenA(_adr1);
     }
 
-    //buy token A for ethers from the exchange
+    // step 1) buy token A for ethers from the exchange
     function buyForEthers(uint _vol) public returns(bool) {
-        address payable _to = payable(address(_exchange));
-        _to.buyTokenForEther(_vol);
+        //address payable _to = payable(address(_exchange));
+        require(_exchange.buyTokenForEther{value: _vol}("TA")==_vol, "transaction failed");
+        return true;
+    }
+
+    // 2) after step 1) buy token B for token A
+    function buyB(uint _vol) public returns(bool){
+        //get available amount of TAs
+        uint _balanceTA = _proxyTA.balanceOf(address(this));
+        //check that the _vol amount of TBs could be bought 
+        require(_vol <= _balanceTA, "can't buy that much TBs");
+        //approve transfer of TAs for TBs for TokenExchange
+        _proxyTA.approve(address(_exchange), _vol);
+        // now buy TBs
+        require(_exchange.buyB(_vol)==true, "transaction failed");
+        return true;
 
     }
 
