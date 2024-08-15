@@ -5,11 +5,16 @@ pragma solidity ^0.8.20;
 import "./TokenA.sol";
 import "./TokenB.sol";
 
+// 1) deploy TockenExchange, it creates TokenA and TokenB
+// 2) deploy testTokenBuyer(address(TockenExchange), address(TockenA))
+// 2.1) buyForEthers (buys TokenA for ethers from TokenExchange)
+// 2.2) buyBforA (buys TokenB for TokenA from from TokenExchange)
+
 contract TokenExchange{
     //for simplicity deploy TokenA and TokenB from TokenExchange contract
     //initially all tokens minted by TokenA() and TokenB() belong to TokenExchange
-    TokenA internal proxyTA = new TokenA();
-    TokenB internal proxyTB = new TokenB();
+    TokenA public proxyTA = new TokenA();
+    TokenB public proxyTB = new TokenB();
     mapping(string => uint) public TokenBalance;
 
     constructor (){
@@ -105,7 +110,7 @@ contract testTokenBuyer{
     }
 
     // 2) after step 1) buy token B for token A
-    function buyB(uint _vol) public returns(bool){
+    function buyBforA(uint _vol) public returns(bool){
         //get available amount of TAs
         uint _balanceTA = _proxyTA.balanceOf(address(this));
         //check that the _vol amount of TBs could be bought 

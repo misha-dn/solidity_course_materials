@@ -85,6 +85,32 @@
 				],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyTA",
+				"outputs": [
+					{
+						"internalType": "contract TokenA",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyTB",
+				"outputs": [
+					{
+						"internalType": "contract TokenB",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -147,11 +173,11 @@
 			]
 		},
 		"TokenExchange/TokenExchng.sol": {
-			"keccak256": "0x867362981c98dd5ec2bd40a415b2daff8d42a575b7a6e4ab94750f58b0307243",
+			"keccak256": "0x126fc6f38f0a76ee791822b19ed668ebcbd33803b9048fb3a46b487acde5a2db",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5d60bd01c34af123cbe3f3245df582c6c0a8f4a89d54f814d2e6d380b4c9ce0a",
-				"dweb:/ipfs/QmbGdAMhkZN7MakpjHBDf3ffza16meT4b7Wj6nDeh5QsQf"
+				"bzz-raw://d6a8a3371b2e67013ddd2d8d6c9f8227a1f4c8e7c580fc0055ff0d7a6d6c1c41",
+				"dweb:/ipfs/QmPs53VjYHrws1YjdBHkGTJfFpxbetUvvRpLDEHAfYyJTX"
 			]
 		}
 	},
