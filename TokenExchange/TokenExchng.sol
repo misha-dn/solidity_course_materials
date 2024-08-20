@@ -7,12 +7,15 @@ import "./TokenB.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 
+
+
 contract TokenExchange{
 
     using SafeERC20 for *;
 
     TokenA internal proxyTA;
     TokenB internal proxyTB;
+
     mapping(string => uint) public TokenBalance;
 
     constructor (TokenA adr1, TokenB adr2){
@@ -22,6 +25,7 @@ contract TokenExchange{
     }
 
     //sells tokenA or tokenB for ethers 1:1
+
     function buyTokenForEther(address _token) public payable returns(int){
         //msg.value = amount of ethers sent by a buyer
         //check which token is wanted  
@@ -80,4 +84,5 @@ contract TokenExchange{
     }    
 
     
+
 }
